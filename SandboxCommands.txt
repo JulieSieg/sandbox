@@ -1,0 +1,55 @@
+Git commands used for sandbox assignment:
+
+gh auth login
+
+1)
+gh repo create
+cd sandbox
+nano .gitignore
+	*.RData
+	*.DS_Store
+	[CTR-X]
+	[Y]
+	[ENTER]
+# move unzipped file into "sandbox" folder on Desktop
+
+git add *
+git commit
+git push
+
+2)
+git checkout playground
+git commit
+git push origin playground
+
+git rm -r ./data/update2019
+nano ./sandbox_todo.txt
+	#delete text and add one line
+	[CTR-X]
+	[Y]
+	[ENTER]
+
+git commit
+git push
+
+3) 
+git checkout main
+git rm -r ./data/zohnerdata
+git rm -r ./analyses/cleaning/zohner_cleaning
+nano ./data/dailyclimatedata_WHERE.txt
+nano ./analyses/cleaning/_cleaningREADME.txt
+
+git commit
+git push 
+
+4) git checkout playground
+git rm -r ./analyses/cleaning/misccleaning_adventures
+git commit 
+git push 
+
+5) git checkout main
+
+
+
+
+
